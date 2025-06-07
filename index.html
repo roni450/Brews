@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Brews and Bakes - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet" />
+  <style>
+    /* Common Styles */
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=1470&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    body::before {
+      content: "";
+      position: fixed; top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.6);
+      z-index: -1;
+    }
+    header {
+      padding: 2rem 1rem;
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      background: rgba(0,0,0,0.4);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+    header h1 {
+      font-size: 3.2rem; letter-spacing: 3px; margin-bottom: 0.3rem;
+    }
+    header p {
+      font-style: italic;
+      font-size: 1.2rem;
+      color: #d9b382;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+    nav {
+      display: flex; justify-content: center; gap: 2rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 0.5rem 1.2rem;
+      border: 2px solid transparent;
+      border-radius: 25px;
+      transition: all 0.3s ease;
+      background-color: rgba(217, 179, 130, 0.2);
+    }
+    nav a:hover,
+    nav a:focus {
+      background-color: #d9b382;
+      color: #3e2f1c;
+      border-color: #d9b382;
+      outline: none;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 900px;
+      margin: 3rem auto;
+      background: rgba(0, 0, 0, 0.55);
+      padding: 2.5rem 3rem;
+      border-radius: 15px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.7);
+      text-align: center;
+      font-size: 1.25rem;
+      line-height: 1.6;
+      color: #f0e6d2;
+      font-weight: 500;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: rgba(0, 0, 0, 0.45);
+      font-size: 1rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #d9b382;
+      box-shadow: inset 0 1px 3px rgba(255,255,255,0.2);
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 2.2rem; }
+      main {
+        margin: 2rem 1rem;
+        padding: 1.5rem 1.5rem;
+        font-size: 1.1rem;
+      }
+      nav { gap: 1rem; }
+      nav a {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Brews and Bakes</h1>
+    <p>Fresh Brew Everyday</p>
+    <nav>
+      <a href="index.html" aria-current="page" style="background-color:#d9b382; color:#3e2f1c;">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <p>
+      Welcome to <strong>Brews and Bakes</strong> — your cozy corner in Rajshahi where every cup is brewed fresh and every bake is made with love.  
+      Come taste the difference that passion makes.
+    </p>
+  </main>
+
+  <footer>
+    &copy; 2025 Brews and Bakes | Rajshahi | Contact: 01717853096
+  </footer>
+</body>
+</html>
